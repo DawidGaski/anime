@@ -1,0 +1,20 @@
+.header {
+    color: rgb(25, 20, 55);
+    background-color: rgb(253, 218, 154);
+    border: outset;
+    border-color: brown;
+    padding: 15px;
+    font-size: 25px;
+}
+
+.header__button {
+    background-color: rgb(249, 225, 189);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.header__secondButton {
+    background-color: rgb(249, 225, 189);
+    padding: 10px;
+    border-radius: 5px;
+}

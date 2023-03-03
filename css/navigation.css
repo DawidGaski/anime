@@ -1,0 +1,14 @@
+.navigation__list {
+    list-style-type: none;
+    background-color: rgb(253, 218, 154);
+    font-size: 20px;
+    text-shadow: 1px 2px 9px;
+    border: outset;
+    border-color: brown;
+    padding: 15px;
+}
+
+.navigation__item {
+    color: rgb(87, 8, 24);
+    text-decoration: none;
+}

@@ -1,23 +1,34 @@
-console.log("hi!")
+{
+    const hi = () => {
+        console.log("hi!")
+    };
 
-let header__button = document.querySelector(".header__button");
-let body = document.querySelector(".body");
-let header__themeName = document.querySelector(".header__themeName");
-let header__secondButton = document.querySelector(".header__secondButton");
-let header__secondThemeName = document.querySelector(".header__secondThemeName");
+    hi();
 
-header__button.addEventListener("click", () => {
-    body.classList.toggle("changeBackground");
-
-    if (body.classList.contains("changeBackground")) {
-        header__themeName.innerText = "jasne";
-    } else {
-        header__themeName.innerText = "ciemne";
+    const toggleBackground = () => {
+        const body = document.querySelector(".body");
+        const header__themeName = document.querySelector(".js-themeName");
+        body.classList.toggle("changeBackground");
+        if (body.classList.contains("changeBackground")) {
+            header__themeName.innerText = "jasne";
+        } else {
+            header__themeName.innerText = "ciemne";
+        }
     }
-});
 
-header__secondButton.addEventListener("click", () => {
-    body.classList.toggle("changeText");
+    const toggleTextColor = () => {
+        const body = document.querySelector(".body");
+        const header__secondThemeName = document.querySelector(".js-secondThemeName");
+        body.classList.toggle("changeText");
 
-    header__secondThemeName.innerText = body.classList.contains("changeText") ? "Wyłącz" : "Włącz";
-});
+        header__secondThemeName.innerText = body.classList.contains("changeText") ? "Wyłącz" : "Włącz";
+    }
+    const init = () => {
+        const header__button = document.querySelector(".js-button");
+        const header__secondButton = document.querySelector(".js-secondButton");
+
+        header__button.addEventListener("click", toggleBackground);
+        header__secondButton.addEventListener("click", toggleTextColor);
+    };
+    init();
+}

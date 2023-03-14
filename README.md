@@ -8,7 +8,7 @@ One of the first I made.
 We can learn something about **anime**.
 ![come with me to anime world](https://www.pngplay.com/wp-content/uploads/12/Kawaii-Anime-Girl-Background-PNG-Image.png)
 ### features
--HTML
--CSS
--JavaScript
--BEM convention
+- HTML
+- CSS
+- JavaScript
+- BEM convention
